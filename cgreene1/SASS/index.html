@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Clark Greene</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="box header">
+      <nav class="navbar">
+        <a href="#" id="sanantonio">san antonio tx</a>
+        <a href="#" class="right">contact</a>
+        <a href="#" class="right">portfolio</a>
+        <!--<a href="#" class="right">services</a> -->
+        <a href="#" class="right">about</a>
+        <a href="#" class="right">home</a>
+      </nav>
+    </div>
+      <!-- Text Section-->
+    <div class="box sidebar">
+      <h3 class="myname">Clark Greene</h3>
+      <h5 class="occupation">Web Developer &#9734; Web Designer &#9734; Freelance</h5>
+
+      <!-- Social Media Links-->
+      <div class="flex-container">
+      <img src="assets/images/Facebook_2.png" alt="facebook icon" width="35" class="icons">
+      <img src="assets/images/Instagram_2.png" alt="instagram icon" width="35" class="icons">
+      <img src="assets/images/Twitter_3.png"  alt="twitter icon" width="35" class="icons" >
+    </div>
+    </div>
+    <!-- Image Section -->
+    <div class="photobox">
+      
+      <img src="assets/images/whitesetup2.jpg" alt="clark image" width="100%" class="photo">
+    </div>
+  </div>
+
+<!-- About  Image-->
+<div class="wrapper2">
+<div class="box section1"><img src="assets/images/misc imgs/group4.jpg" width="75%" class="hands1"></div>
+<!-- ABout Text Area-->
+<div class="box section2">
+  <p class="about">About</p>
+<p class="description">Freelance Web Designer & Developer<br>based in San Antonio, Texas.<br> I create beautiful and functional websites for small businesses and Individuals.</p>
+<p class="description">Skillsets: HTML, CSS & Graphic Design.</p>
+</div>
+<!--Collaborate Text Area -->
+<div class="box section3">
+  <p class="collabrate">Let's Collaborate!</p>
+<p class="description2">I'm open for collaborations.<br>
+   I can create for you great web designs, portfolios and landing pages at a reasonable price.</p>
+<!--<p>Hire me</p> -->
+ </div>
+</div>
+
+<!-- Contact Me Area -->
+
+<div class="wrapper3">
+
+<div>
+<p class="contact-title">Contact</p>
+<p class="contact-description">Say Hi! or contact me on social media</p>
+</div>
+
+<div>
+  <form>
+    <div class="row">
+      <div class="col">
+<input type="text" class="form-control"  name="contactFullName" id="contactFullName"placeholder="Full Name*" required>
+
+</div>
+
+<div class="col">
+  <input type="email" class="form-control" name="contactEmail" id="contactEmail" placeholder="Email*" required>
+</div>
+</div>
+<div class="form-group">
+  <input type="text" class="form-control" name="contactSubject" id="contactSubject" placeholder="Subject*" required>
+</div>
+
+<div class="form-group">
+  <textarea class="form-control" name="contactTextarea" id="contactTextarea" placeholder="Message*" rows="3" required></textarea>
+
+</div>
+<div class="centerb">
+<button type="submit" name="submit-contact" id="submit-contact" class="send">Send</button>
+
+<!-- PHP code for Contact form: -->
+<!-- Change the index.html to index.php and remove the comment tags below: -->
+<!--
+        <?php
+         error_reporting(0);
+         $userIp = $_SERVER['REMOTE_ADDR'];
+         $name = $_POST['contactFullName'];
+         $email = $_POST['contactEmail'];
+         $subject = $_POST['contactSubject'];
+         $message = "Ip: $userIp"."\n"." Name: $name"."\n"."Email: $email"."\n"."Message: ".$_POST['contactTextarea'];
+         $info = "Message sent. Check the mail, I will contact you soon. Thank you!";
+
+         if(isset($_POST['submit-contact'])) {
+
+           mail('youremail@mail.com', $subject, $message); /* Change the 'youremail@mail.com' with your email */
+           echo "<script type='text/javascript'>alert('$info');</script>";
+         }
+        ?>
+        -->
+        
+        </form>
+      </div>
+      </div>
+      
+
+
+<!-- End of Contact Me Area -->
+  
+
+    <!--<p class="occupation"><span class="typewrite" data-period="1500"
+      data-type='[ "Front End Developer", "Web Designer", "Freelancer" ]'>
+     <span class="wrap"></span>
+   </span>
+   </p> -->
+   <footer>
+    <p>&copy; Copyright Clark Greene 2021. All rights reserved</p>
+   </footer>
+</body>
+</html>
