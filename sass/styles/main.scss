@@ -218,7 +218,51 @@ margin: 30px;
   font-family: $heading;
   font-size: 24px;  
 }
+//END OF ABOUT AND COLLABORATE SECTION//
 
+  //PORTFOLIO SECTION//
+.wrapper4 {
+  display: grid;
+}
+
+.foliotext {
+  //border: 1px solid red;
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top:  250px;
+    padding-bottom: 30px;
+    font-family: $heading;
+    color: $font-color;
+    font-size: 26px;
+    
+    }
+
+  .picgrid2 {
+    //border: 1px solid orange;
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    grid-template-rows: 240px 240px 240px;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+    margin: 0px;
+    }
+
+  .foto {
+    //border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+
+ .foto img {
+  height: 240px; width: 360px;
+ }
+
+//END PORTFOLIO SECTION//
 
 //CONTACT SECTION//
 
