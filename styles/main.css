@@ -646,6 +646,7 @@ a.right:hover {
 .foto img {
   height: 240px;
   width: 360px;
+  border-radius: 20px;
 }
 
 .wrapper3 {
